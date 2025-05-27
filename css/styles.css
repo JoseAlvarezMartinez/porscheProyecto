@@ -1,19 +1,39 @@
 * {
   font-family: "Montserrat", sans-serif;
 }
-.oscurecer-fondo{
-    position:absolute;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.169);
+.oscurecer-fondo {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.35);
 }
 
 /* Header Estilos */
-.index-header{
-    background-image: url(../img/headerBackground.jpg);
-    background-position: center;
-    background-size: cover;
+.index-header {
+  background-image: url(../img/headerBackground.jpg);
+  background-position: center;
+  background-size: cover;
 
-    height: 95vh;
-    position: relative;
+  height: 95vh;
+  position: relative;
+}
+
+.header-inferior {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1.2rem;
+  height: 90%;
+}
+.btn-contenedor button{
+    background-color: rgb(33, 37, 41);
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    width: 100%;
+    padding: 0.5rem;
+    transition: transform 0.5s;
+}
+.btn-contenedor button:hover{
+    transform: scale(1.05);
 }
