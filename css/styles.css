@@ -1,0 +1,19 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+.oscurecer-fondo{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.169);
+}
+
+/* Header Estilos */
+.index-header{
+    background-image: url(../img/headerBackground.jpg);
+    background-position: center;
+    background-size: cover;
+
+    height: 95vh;
+    position: relative;
+}
