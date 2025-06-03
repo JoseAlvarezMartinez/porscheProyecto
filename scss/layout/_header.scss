@@ -1,0 +1,28 @@
+.index-header {
+  @extend %backgroundHeaderPages;
+  background-image: url(../img/headerBackground.jpg);
+
+  position: relative;
+}
+.sucursales-header {
+  @extend %backgroundHeaderPages;
+  background-image: url(../img/backgroundSucursales.jpg);
+}
+.header-inferior {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding: 0 1.2rem;
+  height: 90%;
+}
+.btn-contenedor button,
+.btn-card-comprar {
+  background-color: $backgroundBtnComprar;
+  color: $colorBlanco;
+  border: none;
+  border-radius: 0.5rem;
+  width: 100%;
+  padding: 0.5rem;
+}

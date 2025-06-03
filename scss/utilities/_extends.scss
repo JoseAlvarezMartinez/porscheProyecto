@@ -1,0 +1,10 @@
+%flexComponentesVertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+%backgroundHeaderPages {
+  background-position: center;
+  background-size: cover;
+  height: 95vh;
+}

@@ -1,0 +1,10 @@
+.flex-container-descubrir {
+  @extend %flexComponentesVertical;
+}
+.descubrir-card {
+  height: 15rem;
+  width: 15rem;
+  background-image: url(../img/descubriFoto.avif);
+
+  border-radius: 0.5rem;
+}

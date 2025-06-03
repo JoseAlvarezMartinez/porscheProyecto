@@ -1,23 +1,10 @@
 @import "./utilities/variables";
-// Extends
+@import "./utilities/extends";
+@import "./layout/header";
+@import "./layout/descubrir";
+@import "./layout/footer";
+@import "./layout/main";
 
-%flexComponentesVertical {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-%backgroundHeaderPages {
-  background-position: center;
-  background-size: cover;
-  height: 95vh;
-}
-// Mixins
-// @mixin backgroundHeadears($bgImagen, $bgPosition, $bgSize, $bgHeight) {
-//   background-image: $bgImagen;
-//   background-position: $bgPosition;
-//   height: $bgHeight;
-//   background-size: $bgSize;
-// }
 * {
   font-family: "Montserrat", sans-serif;
 }
@@ -27,72 +14,4 @@
   height: 100%;
   width: 100%;
   background-color: $fondoOscuroColor;
-}
-
-/* Header Estilos */
-.index-header {
-  @extend %backgroundHeaderPages;
-  background-image: url(../img/headerBackground.jpg);
-
-  position: relative;
-}
-.sucursales-header {
-  @extend %backgroundHeaderPages;
-  background-image: url(../img/backgroundSucursales.jpg);
-}
-.header-inferior {
-  display: flex;
-  flex-direction: column;
-
-  justify-content: center;
-
-  padding: 0 1.2rem;
-  height: 90%;
-}
-.btn-contenedor button,
-.btn-card-comprar {
-  background-color: $backgroundBtnComprar;
-  color: $colorBlanco;
-  border: none;
-  border-radius: 0.5rem;
-  width: 100%;
-  padding: 0.5rem;
-}
-
-/* Main Estilos */
-.card-auto {
-  margin: 0 auto;
-  background-color: $backgroundBtnComprar;
-  padding: 1rem;
-  border-radius: 0.5rem;
-}
-.btn-card-comprar {
-  background-color: $colorBlanco;
-}
-
-/* Descubrir Estilos */
-.flex-container-descubrir {
-  @extend %flexComponentesVertical;
-}
-.descubrir-card {
-  height: 15rem;
-  width: 15rem;
-  background-image: url(../img/descubriFoto.avif);
-
-  border-radius: 0.5rem;
-}
-
-/* Footer Estilos */
-.index-footer {
-  background-color: $backgroundBtnComprar;
-  height: 5rem;
-}
-.logotipoRedes {
-  width: 3rem;
-}
-.flex-container-footer {
-  display: flex;
-  justify-content: center;
-
-  gap: 1rem;
 }
