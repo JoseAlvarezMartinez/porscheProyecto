@@ -3,7 +3,13 @@
   background-color: $backgroundBtnComprar;
   padding: 1rem;
   border-radius: 0.5rem;
+
+  width: 25rem;
 }
 .btn-card-comprar {
   background-color: $colorBlanco;
+}
+.main-container-flex{
+  display: flex;
+  flex-wrap: wrap;
 }
